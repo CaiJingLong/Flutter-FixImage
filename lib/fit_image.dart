@@ -12,11 +12,25 @@ import 'package:flutter/rendering.dart';
 
 /// use dart:ui.Image display image
 ///
-class FixImage extends StatelessWidget {
+/// Follow the apache 2.0 agreement
+///
+/// you can copy and edit my code
+///
+/// but you need reservation my statement
+///
+/// create by caijinglong 2018-05-11
+class FitImage extends StatelessWidget {
   final BoxFit fit;
   final Image child;
 
-  const FixImage({
+  /// Creates a widget that displays an image.
+  ///
+  /// The [child]
+  ///
+  /// must not be null.
+  ///
+  /// the [fit] is use [BoxFit]
+  const FitImage({
     Key key,
     @required this.child,
     this.fit = BoxFit.cover,
@@ -87,12 +101,12 @@ class __ImageState extends State<_Image> {
 
     if (list != null) {
       ui.decodeImageFromList(list, (ui.Image img) {
-        print("ui.img is $img");
         setState(() {
           _image = img;
         });
       });
     } else {
+      // todo other image provider should be support
       print("no support image");
     }
   }
@@ -125,8 +139,6 @@ class _Paint extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     var paint = new Paint();
-    print("size = $size");
-
     paintImage(image, new Rect.fromLTRB(0.0, 0.0, size.width, size.height), canvas, paint, boxFit);
   }
 
@@ -164,12 +176,11 @@ class _Paint extends CustomPainter {
   bool shouldRebuildSemantics(_Paint oldDelegate) => false;
 }
 
-/// Draw the canvas from the ui.Image.
+/// Draw the canvas from the ui.Image. copy from flutter.io's
 void paintImage(ui.Image image, Rect outputRect, Canvas canvas, Paint paint, BoxFit fit) {
   final Size imageSize = new Size(image.width.toDouble(), image.height.toDouble());
   final FittedSizes sizes = applyBoxFit(fit, imageSize, outputRect.size);
   final Rect inputSubrect = Alignment.center.inscribe(sizes.source, Offset.zero & imageSize);
   final Rect outputSubrect = Alignment.center.inscribe(sizes.destination, outputRect);
   canvas.drawImageRect(image, inputSubrect, outputSubrect, paint);
-  print("paintImage finish");
 }

@@ -1,8 +1,9 @@
 name: fit_image
 description: A Image Widget that can be used with BoxFit.
 version: 0.1.0
-author: Caijinglong
-homepage:
+author: caijinglong <cjl_spy@163.com>
+homepage: https://github.com/CaiJingLong/Flutter-FixImage
+email: cjl_spy@163.com
 
 dependencies:
   flutter:
@@ -49,3 +50,7 @@ flutter:
   #
   # For details regarding fonts in packages, see
   # https://flutter.io/custom-fonts/#from-packages
+
+environment:
+  sdk: ">=2.0.0-dev.28.0 <3.0.0"
+  flutter: ">=0.1.4 <2.0.0"

@@ -5,7 +5,7 @@ import 'package:fit_image/fit_image.dart';
 
 void main() {
   testWidgets("FixImage", (WidgetTester tester) async {
-    Widget image = new FixImage(
+    Widget image = new FitImage(
       child: new Image.asset("img/flutter-mark-square-100.png"),
       fit: BoxFit.cover,
     );
