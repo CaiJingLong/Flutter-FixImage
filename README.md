@@ -39,3 +39,7 @@ with Flutter:
     $ flutter packages get
 
 Alternatively, your editor might support flutter packages get. Check the docs for your editor to learn more.
+
+## screenshot
+
+![https://raw.githubusercontent.com/CaiJingLong/Flutter-FixImage/master/img/1.gif](https://raw.githubusercontent.com/CaiJingLong/Flutter-FixImage/master/img/1.gif)
