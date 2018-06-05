@@ -1,3 +1,6 @@
+## [0.1.2] 
+ui.Image will call dispose()
+
 ## [0.1.1] 
 update readme
 

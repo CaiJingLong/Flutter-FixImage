@@ -29,7 +29,7 @@ Add this to your package's pubspec.yaml file:
     
     
     dependencies:
-      fit_image: "^0.1.1"
+      fit_image: "^0.1.2"
 
 2. Install it
 You can install packages from the command line:
