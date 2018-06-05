@@ -63,6 +63,12 @@ class __ImageState extends State<_Image> {
   }
 
   @override
+  void dispose() {
+    _image?.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     if (_image == null) {
       return new CustomPaint();
@@ -102,6 +108,9 @@ class __ImageState extends State<_Image> {
     if (list != null) {
       ui.decodeImageFromList(list, (ui.Image img) {
         setState(() {
+          if (_image != null) {
+            _image?.dispose();
+          }
           _image = img;
         });
       });
