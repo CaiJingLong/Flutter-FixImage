@@ -2,6 +2,10 @@
 
 A Image Widget that can be used with BoxFit.
 
+## before use library
+You need to know before using it.
+
+The Image widget in flutter can use Boxfit, but you need to set the width and height attributes first.
 
 ## screenshot
 
