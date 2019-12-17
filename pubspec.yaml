@@ -1,6 +1,6 @@
 name: fit_image
 description: A Image Widget that can be used with BoxFit.
-version: 0.1.2
+version: 0.1.3
 author: caijinglong <cjl_spy@163.com>
 homepage: https://github.com/CaiJingLong/Flutter-FixImage
 email: cjl_spy@163.com
@@ -18,7 +18,7 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
-  asserts:
+  assets:
     - img/flutter-mark-square-100.png
   # To add assets to your package, add an assets section, like this:
   # assets:
